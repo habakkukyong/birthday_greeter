@@ -1,6 +1,6 @@
 require 'capybara/dsl'
 
-describe ServerTest do
+describe TestServer do
   feature 'Server shows content' do
     scenario 'when running server can place get request' do
       visit('/')

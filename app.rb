@@ -1,2 +1,2 @@
-class ServerTest
+class TestServer
 end
