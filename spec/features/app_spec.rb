@@ -1,4 +1,4 @@
-require 'capybara/dsl'
+require_relative '../../app'
 
 describe TestServer do
   feature 'Server shows content' do
