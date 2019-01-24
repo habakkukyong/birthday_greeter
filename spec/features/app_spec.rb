@@ -1,10 +1,10 @@
-require_relative '../../app'
+require 'capybara/dsl'
+require 'selenium-webdriver'
 
-describe TestServer do
-  feature 'Server shows content' do
-    scenario 'when running server can place get request' do
-      visit('/')
-      expect(page).to have_content 'Server is alive'
-    end
+feature 'TestServer' do
+  scenario 'Get request to root on TestServer loads content' do
+    visit('/')
+    puts page.html
+    expect(page).to have_content 'Server is alive'
   end
 end
