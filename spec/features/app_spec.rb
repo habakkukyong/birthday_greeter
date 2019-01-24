@@ -1,10 +1,10 @@
 require 'capybara/dsl'
 require 'selenium-webdriver'
 
-feature 'TestServer' do
-  scenario 'Get request to root on TestServer loads content' do
+feature 'BirthdayGreeter' do
+  scenario 'Get request to root loads content' do
     visit('/')
     puts page.html
-    expect(page).to have_content 'Server is alive'
+    expect(page).to have_content 'Happy Birthday'
   end
 end
